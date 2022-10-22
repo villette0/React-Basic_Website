@@ -1,4 +1,15 @@
 import React from 'react'
+import Carousel from './components/Carousel'
+
+const CARDS = 10;
+
+const Card = ({title, content}) => (
+  <div className='card'>
+    <h2>{title}</h2>
+    <p>{content}</p>
+  </div>
+);
+
 
 const Home = () => {
   return (

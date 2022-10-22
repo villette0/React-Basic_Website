@@ -1,15 +1,9 @@
 import React, {useState} from 'react';
-import {TiChevronLeftOutline, TiChevronRightOutline} from 'https://cdn.skypack.dev/react-icons/ti';
+// import {TiChevronLeftOutline, TiChevronRightOutline} from 'https://cdn.skypack.dev/react-icons/ti';
+import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
 
-const CARDS = 10;
+
 const MAX_VISIBILITY = 3;
-
-const Card = ({title, content}) => (
-  <div className='card'>
-    <h2>{title}</h2>
-    <p>{content}</p>
-  </div>
-);
 
 const Carousel = ({children}) => {
   const [active, setActive] = useState(2);
